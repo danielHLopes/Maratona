@@ -11,7 +11,7 @@
 }
 /*header*/
 .header{
-    background-image:url("fundo.jpg");
+    background-image:url("images/fundo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -21,14 +21,18 @@
     padding: 10px;
     background-color:  rgba(241, 196, 15, 0.7);
     display: flex;
+    align-items: center
 }
 .header__img{
     width: 30px;
     height: 30px;
-    
+    opacity: 0.5;
+    margin-top:10px; 
+    margin-left: 10px;
+
 }
 .header__titulo{
-    
+    text-align: center;
     font-size: 29px;
 }
 
@@ -91,6 +95,7 @@
         margin: 0 auto;
         margin-top: 50px;
         padding: 25px;
+        font-size: 36px;
     }
 
 
@@ -146,8 +151,104 @@
 
 /*main-----------------------------------------------------*/
 
-.titulo{
+main h1{
+    text-align: center;
+    font-size: 32px;
+    padding: 45px;
+}
+
+main h2{
+    text-align: center;
+    font-size: 30px;
+}
+main p{
+    font-size: 20px;
+    padding-top: 30px;
+}
+@media(max-width: 600px){
+    main h1{
+        font-size: 30px;
+    }
+    main h2{
+        font-size: 28px;
+    }
+    main p{
+        font-size: 18px;
+    }
+    .container{
+        max-width: 300px;
+    }
+}
+
+main iframe{
+    width: 100%;;
+}
+
+/*tabela --------------------------------------*/
+.tabela{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.tabela tr:nth-child(1){
+    background-color: #E5E5E5;
+    font-size: 18px;
+    border: #000 solid 1px;
+    
+  }
+
+  .tabela tr :nth-child(1){
+      border-right: #000 solid 1px;
+  }
+
+  .tabela th{
+    padding: 10px;
+  }
+/*tabela --------------------------------------*/
+.contato{
+    display: flex;
     text-align: center;
 }
 
+.contato__arruma{
+    display: flex;
+    padding: 10px 20px;
+}
 
+.contato input{
+    border: #F1C40F 1px solid;
+    font-size: 18px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.contato__msg{
+    height: 10px;
+    
+}
+
+@media(max-width:600px){
+    .contato{
+        display: inline;
+        text-align: left;
+    }
+    .contato__arruma{
+        display: inline;
+    }
+    .contato input{
+        margin-left: 0;
+        width: 322px;
+    }
+}
+/*footer--------------------------------------------------*/
+.footer{
+    background-color: #F1C40F;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    padding-bottom: 50px;
+}
